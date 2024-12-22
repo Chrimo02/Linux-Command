@@ -1,1 +1,5 @@
-# Linux-Command
+# grep-Command
+
+Implemented Parameters:
+
+-

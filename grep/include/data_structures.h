@@ -10,9 +10,6 @@ Match* create_match(const char *line, int line_number);
 // Function to add a match to the list
 void add_match(Match **head, const char *line, int line_number);
 
-// Function to print all matches
-void print_matches(Match *head);
-
 // Function to free the allocated memory for the list
 void free_matches(Match *head);
 

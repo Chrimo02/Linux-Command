@@ -65,6 +65,15 @@ void print_matches(Match *head, const char *pattern) {
     }
 }
 
+void print_matches_with_lines(Match *head, const char *pattern) {
+    Match *current = head;
+    while (current != NULL) {
+        printf("%d:", current->line_number); // Print line number
+        highlight_match(current->line, pattern);
+        current = current->next;
+    }
+}
+
 // Free the linked list memory
 void free_matches(Match *head) {
     Match *current = head;

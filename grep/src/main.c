@@ -11,11 +11,11 @@
 
 Match *matches = NULL;  // Linked list to store matches
 
-int grep_callback(const char *line) {
+int grep_callback(const char *line, int line_number) {
     extern options_t options;
 
     if (pattern_match(line, options.pattern, options.ignore_case, options.invert_match)) {
-        add_match(&matches, line, -1);  // Use -1 if line numbers are not tracked
+        add_match(&matches, line, line_number);  // Zeilennummer übergeben
     }
 
     return 1;
@@ -43,9 +43,10 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    print_matches(matches);  // Print results after processing
+    // Highlight matches in the output
+    print_matches(matches, options.pattern);
+
     free_matches(matches);   // Free allocated memory
 
     return 0;
 }
-

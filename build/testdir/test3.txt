@@ -1,6 +1,0 @@
-This is file 3.
-It contains some text.
-Searching for the word test.
-
-
-baum

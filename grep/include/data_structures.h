@@ -16,4 +16,11 @@ void print_matches(Match *head);
 // Function to free the allocated memory for the list
 void free_matches(Match *head);
 
+void highlight_match(const char *line, const char *pattern);
+
+void print_matches(Match *head, const char *pattern);
+
+void print_matches_with_lines(Match *head, const char *pattern);
+
+
 #endif

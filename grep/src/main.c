@@ -8,12 +8,13 @@
 #include "data_structures.h"
 #include "threading.h"  // Include threading for possible parallelism
 #include "directory_ops.h"  // Include directory operations for file listing
-
+options_t options;
 Match *matches = NULL;  // Linked list to store matches
 
+// Callback-Funktion für die Verarbeitung von Zeilen
 int grep_callback(const char *line, int line_number) {
-    extern options_t options;
 
+    // Prüfe, ob die Zeile das Muster erfüllt
     if (pattern_match(line, options.pattern, options.ignore_case, options.invert_match)) {
         add_match(&matches, line, line_number);  // Zeilennummer übergeben
     }
@@ -21,32 +22,35 @@ int grep_callback(const char *line, int line_number) {
     return 1;
 }
 
-options_t options;
-
+// Wrapper für die rekursive Verarbeitung
 void recursive_wrapper(const char *file_path) {
-    process_file(file_path, grep_callback);  // Passe hier an, was 'grep_callback' sein soll
+    process_file(file_path, grep_callback);
 }
 
 int main(int argc, char *argv[]) {
+    // Argumente parsen und Optionen initialisieren
     parse_arguments(argc, argv, &options);
 
     if (options.file_count == 0) {
-        process_stdin(grep_callback);  // Process stdin if no files are provided
+        // Verarbeite stdin, falls keine Dateien angegeben wurden
+        process_stdin(grep_callback);
     } else {
         for (int i = 0; i < options.file_count; i++) {
             if (options.recursive) {
-                // Nutze die Wrapper-Funktion für rekursive Durchsuchung
+                // Rekursive Verarbeitung
                 recursive_traversal(options.files[i], recursive_wrapper);
             } else {
+                // Verarbeite einzelne Datei
                 process_file(options.files[i], grep_callback);
             }
         }
     }
 
-    // Highlight matches in the output
-    print_matches(matches, options.pattern);
+    // Ausgabe der Ergebnisse basierend auf den Optionen
+    print_matches(matches, &options);
 
-    free_matches(matches);   // Free allocated memory
+    // Speicher freigeben
+    free_matches(matches);
 
     return 0;
 }

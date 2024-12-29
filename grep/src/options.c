@@ -1,4 +1,3 @@
-
 #include "options.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +14,10 @@ void parse_arguments(int argc, char *argv[], options_t *options) {
             options->invert_match = 1;
         } else if (strcmp(argv[i], "-r") == 0) {
             options->recursive = 1;
+        } else if (strcmp(argv[i], "-n") == 0) {
+            options->show_line_number = 1;
+        } else if (strcmp(argv[i], "-c") == 0) {
+            options->count_matches = 1;
         } else if (argv[i][0] != '-') {
             if (options->pattern == NULL) {
                 options->pattern = argv[i];

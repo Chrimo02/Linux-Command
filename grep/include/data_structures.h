@@ -1,6 +1,8 @@
 #ifndef DATA_STRUCTURES_H
 #define DATA_STRUCTURES_H
 
+#include "options.h" // Für den Zugriff auf options_t
+
 // Function declarations for managing the linked list of matches
 typedef struct Match Match;
 
@@ -13,11 +15,10 @@ void add_match(Match **head, const char *line, int line_number);
 // Function to free the allocated memory for the list
 void free_matches(Match *head);
 
-void highlight_match(const char *line, const char *pattern);
+// Highlight matched words in a line
+void highlight_match(const char *line, const char *pattern, int ignore_case);
 
-void print_matches(Match *head, const char *pattern);
+// Print matches with options (e.g., line numbers, counts)
+void print_matches(Match *head, const options_t *opts);
 
-void print_matches_with_lines(Match *head, const char *pattern);
-
-
-#endif
+#endif // DATA_STRUCTURES_H

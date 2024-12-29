@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include "options.h"
+#include "pattern.h" // Für Zugriff auf pattern_match
 
 // Define the linked list node structure
 typedef struct Match {
@@ -37,16 +39,20 @@ void add_match(Match **head, const char *line, int line_number) {
 }
 
 // Highlight the matched word in a line using ANSI escape sequences
-void highlight_match(const char *line, const char *pattern) {
+void highlight_match(const char *line, const char *pattern, int ignore_case) {
     const char *start = line;
     const char *match;
 
-    while ((match = strstr(start, pattern)) != NULL) {
+    while ((match = (ignore_case ? pattern_case_insensitive_find(start, pattern) : strstr(start, pattern))) != NULL) {
         // Print the part of the line before the match
         fwrite(start, 1, match - start, stdout);
 
         // Print the match in red
-        printf("\033[31m%s\033[0m", pattern);
+        printf("\033[31m");
+        for (size_t i = 0; i < strlen(pattern); i++) {
+            putchar(match[i]);
+        }
+        printf("\033[0m");
 
         // Move the pointer forward
         start = match + strlen(pattern);
@@ -56,23 +62,44 @@ void highlight_match(const char *line, const char *pattern) {
     printf("%s", start);
 }
 
-// Print all matches in the list with highlighted matches
-void print_matches(Match *head, const char *pattern) {
+// Print all matches based on options
+void print_matches(Match *head, const options_t *opts) {
+    if (opts->count_matches) {
+        // Count matches instead of printing them
+        int count = 0;
+        Match *current = head;
+        while (current != NULL) {
+            count++;
+            current = current->next;
+        }
+        printf("Total matches: %d\n", count);
+        return;
+    }
+
+    // Print matches line by line
     Match *current = head;
     while (current != NULL) {
-        highlight_match(current->line, pattern);
+        if (opts->show_line_number) {
+            printf("%d:", current->line_number); // Print line number
+        }
+
+        // Entferne potenzielle überflüssige \n am Ende der Zeile
+        char *cleaned_line = strdup(current->line);
+        size_t len = strlen(cleaned_line);
+        if (len > 0 && cleaned_line[len - 1] == '\n') {
+            cleaned_line[len - 1] = '\0';
+        }
+
+        // Highlight matches und gebe die Zeile aus
+        highlight_match(cleaned_line, opts->pattern, opts->ignore_case);
+        printf("\n");
+
+        // Speicher freigeben
+        free(cleaned_line);
         current = current->next;
     }
 }
 
-void print_matches_with_lines(Match *head, const char *pattern) {
-    Match *current = head;
-    while (current != NULL) {
-        printf("%d:", current->line_number); // Print line number
-        highlight_match(current->line, pattern);
-        current = current->next;
-    }
-}
 
 // Free the linked list memory
 void free_matches(Match *head) {

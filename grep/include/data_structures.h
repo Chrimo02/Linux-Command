@@ -18,7 +18,7 @@ void free_matches(Match *head);
 // Highlight matched words in a line
 void highlight_match(const char *line, const char *pattern, int ignore_case);
 
-// Print matches with options (e.g., line numbers, counts)
-void print_matches(Match *head, const options_t *opts);
+// Print matches with options (e.g., line numbers, file names, counts)
+void print_matches(Match *head, const options_t *opts, const char *file_name);
 
 #endif // DATA_STRUCTURES_H

@@ -32,7 +32,6 @@ void recursive_wrapper(const char *file_path) {
     }
 }
 
-
 int main(int argc, char *argv[]) {
     // Parse arguments and initialize options
     parse_arguments(argc, argv, &options);
@@ -48,10 +47,8 @@ int main(int argc, char *argv[]) {
         }
     } else {
         if (options.recursive) {
-            // Recursive directory processing
-            for (int i = 0; i < options.file_count; i++) {
-                recursive_traversal(options.files[i], recursive_wrapper);
-            }
+            // Recursive directory processing using threads
+            start_threaded_search((const char **)options.files, options.file_count, recursive_wrapper);
         } else {
             // Process each file
             for (int i = 0; i < options.file_count; i++) {

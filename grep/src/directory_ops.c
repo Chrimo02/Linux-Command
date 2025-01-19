@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-
+/*
 void list_files_in_directory(const char *dir_path) {
     DIR *dir = opendir(dir_path);
     if (dir == NULL) {
@@ -21,6 +21,7 @@ void list_files_in_directory(const char *dir_path) {
     }
     closedir(dir);
 }
+*/ // diese Funktion wird nirgends benutzt -> löschen?
 
 void recursive_traversal(const char *dir_path, void (*callback)(const char *file_path)) {
     DIR *dir = opendir(dir_path);

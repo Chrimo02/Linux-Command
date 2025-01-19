@@ -21,4 +21,6 @@ void highlight_match(const char *line, const char *pattern, int ignore_case);
 // Print matches with options (e.g., line numbers, file names, counts)
 void print_matches(Match *head, const options_t *opts, const char *file_name);
 
+void free_matches(Match *head);
+
 #endif // DATA_STRUCTURES_H

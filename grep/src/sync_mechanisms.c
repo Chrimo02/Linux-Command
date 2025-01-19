@@ -33,10 +33,3 @@ void unlock_mutex(pthread_mutex_t *mutex) {
     }
 }
 
-void destroy_mutex(pthread_mutex_t *mutex) {
-    if (pthread_mutex_destroy(mutex) != 0) {
-        perror("pthread_mutex_destroy");
-        exit(EXIT_FAILURE);
-    }
-    free(mutex);
-}

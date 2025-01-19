@@ -4,15 +4,14 @@
 #include <stdio.h>
 #include "options.h"
 #include "pattern.h"
+#include "threading.h" // For locking/unlocking mutex
 
-// Define the linked list node structure
 typedef struct Match {
-    char *line;        // The matching line
-    int line_number;   // Line number of the match
-    struct Match *next; // Pointer to the next match
+    char *line;
+    int line_number;
+    struct Match *next;
 } Match;
 
-// Create a new match node
 Match* create_match(const char *line, int line_number) {
     Match *new_match = malloc(sizeof(Match));
     if (!new_match) {
@@ -32,9 +31,10 @@ Match* create_match(const char *line, int line_number) {
     return new_match;
 }
 
-// Add a match to the linked list (append to the end)
 void add_match(Match **head, const char *line, int line_number) {
     Match *new_match = create_match(line, line_number);
+
+    lock_matches(); // Lock the mutex before modifying the list
 
     if (*head == NULL) {
         *head = new_match;
@@ -45,9 +45,10 @@ void add_match(Match **head, const char *line, int line_number) {
         }
         current->next = new_match;
     }
+
+    unlock_matches(); // Unlock the mutex after modifying the list
 }
 
-// Highlight the matched word in a line using ANSI escape sequences
 void highlight_match(const char *line, const char *pattern, int ignore_case) {
     const char *start = line;
     const char *match;
@@ -58,47 +59,49 @@ void highlight_match(const char *line, const char *pattern, int ignore_case) {
         start = match + strlen(pattern);  // Move pointer forward
     }
 
-    printf("%s", start);  // Print remaining part of the line (without adding a newline)
+    printf("%s", start);  // Print remaining part of the line
 }
 
-
-
-// Print all matches based on options
 void print_matches(Match *head, const options_t *opts, const char *file_name) {
+    lock_matches(); // Lock the mutex before reading the list
+
     if (head == NULL) {
-        return;  // No matches, skip output
+        unlock_matches();
+        return;
     }
 
     if (opts->count_matches) {
-        // Count matches per file
         int count = 0;
         Match *current = head;
         while (current != NULL) {
             count++;
             current = current->next;
         }
-        printf("%s:%d\n", file_name, count);  // Prepend file name to match count
+        printf("%s:%d\n", file_name, count);
+        unlock_matches();
         return;
     }
 
     Match *current = head;
     while (current != NULL) {
         if (opts->file_count > 1 || opts->recursive) {
-            printf("%s:", file_name);  // Prepend file name if recursive or multiple files
+            printf("%s:", file_name);
         }
 
         if (opts->show_line_number) {
-            printf("%d:", current->line_number);  // Print line number
+            printf("%d:", current->line_number);
         }
 
         highlight_match(current->line, opts->pattern, opts->ignore_case);
         current = current->next;
     }
+
+    unlock_matches(); // Unlock the mutex after reading the list
 }
 
-
-// Free the linked list memory
 void free_matches(Match *head) {
+    lock_matches(); // Lock the mutex before modifying the list
+
     Match *current = head;
     while (current != NULL) {
         Match *temp = current;
@@ -106,4 +109,6 @@ void free_matches(Match *head) {
         free(temp->line);
         free(temp);
     }
+
+    unlock_matches(); // Unlock the mutex after modifying the list
 }

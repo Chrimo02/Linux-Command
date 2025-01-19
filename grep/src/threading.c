@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include "directory_ops.h"
 
+// Mutex for protecting access to the matches list
+static pthread_mutex_t matches_mutex = PTHREAD_MUTEX_INITIALIZER;
+
 typedef struct {
     const char *dir_path;
     void (*callback)(const char *file_path);
@@ -41,4 +44,18 @@ int start_threaded_search(const char *dir_paths[], int dir_count, void (*callbac
     }
 
     return 0;
+}
+
+// Lock and unlock functions for the matches mutex
+void lock_matches() {
+    pthread_mutex_lock(&matches_mutex);
+}
+
+void unlock_matches() {
+    pthread_mutex_unlock(&matches_mutex);
+}
+
+// Destroy the matches mutex
+void destroy_mutex() {
+    pthread_mutex_destroy(&matches_mutex);
 }

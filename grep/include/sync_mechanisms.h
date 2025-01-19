@@ -7,6 +7,4 @@
 pthread_mutex_t *create_mutex();
 void lock_mutex(pthread_mutex_t *mutex);
 void unlock_mutex(pthread_mutex_t *mutex);
-void destroy_mutex(pthread_mutex_t *mutex);
-
 #endif // SYNC_MECHANISMS_H

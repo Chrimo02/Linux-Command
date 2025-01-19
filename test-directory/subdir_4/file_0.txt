@@ -1,0 +1,43 @@
+pattern2
+text randomtext text
+randomtext
+pattern2
+anotherpattern data specialword pattern2 word
+anotherpattern pattern1 data specialword randomtext text pattern1 specialword
+randomtext text text data randomtext specialword word specialword
+pattern1 specialword specialword data data randomtext text text text specialword
+randomtext anotherpattern pattern2 anotherpattern specialword data word randomtext
+specialword specialword word specialword
+data pattern2 word anotherpattern randomtext pattern1 word
+pattern2
+anotherpattern randomtext randomtext randomtext randomtext
+anotherpattern
+pattern2 specialword specialword data text anotherpattern randomtext
+data anotherpattern randomtext word
+pattern1 randomtext data pattern2 text
+pattern1
+anotherpattern word specialword specialword randomtext word
+specialword
+anotherpattern
+specialword pattern2 word pattern2 pattern2 pattern2 pattern1 specialword pattern1 text
+word randomtext anotherpattern anotherpattern text data anotherpattern pattern2
+word randomtext specialword anotherpattern randomtext data specialword pattern2 text data
+pattern1 text specialword randomtext specialword randomtext randomtext
+data randomtext randomtext specialword anotherpattern text word pattern1
+pattern1 pattern2 data specialword pattern2 word pattern2 pattern1
+text text word
+text word specialword pattern1 data pattern1 pattern1 text specialword
+word pattern1 randomtext pattern2 pattern2 pattern2
+anotherpattern text specialword randomtext specialword
+specialword
+pattern1 pattern2 specialword pattern1 pattern2 specialword data text
+specialword anotherpattern word data randomtext
+anotherpattern text specialword anotherpattern text
+data data randomtext pattern2 anotherpattern
+specialword
+randomtext randomtext specialword specialword
+data word pattern2 anotherpattern pattern1 word anotherpattern pattern1 specialword pattern1
+pattern2 anotherpattern pattern1 word randomtext
+word pattern2 anotherpattern pattern2 text pattern1
+pattern2 randomtext pattern2
+data pattern2 text word word

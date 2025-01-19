@@ -1,0 +1,47 @@
+specialword text randomtext
+randomtext anotherpattern specialword anotherpattern text word randomtext word anotherpattern word
+word pattern2 randomtext text pattern2 specialword
+anotherpattern
+anotherpattern specialword pattern1 anotherpattern
+anotherpattern
+randomtext text pattern1
+anotherpattern
+pattern2 word randomtext
+pattern1
+specialword data specialword randomtext
+text specialword specialword pattern1
+specialword specialword word specialword word pattern1 word
+pattern1 randomtext specialword randomtext
+word anotherpattern anotherpattern
+anotherpattern pattern1 pattern1
+anotherpattern pattern2 word word anotherpattern specialword
+specialword
+pattern2 data data anotherpattern anotherpattern
+text pattern2 specialword data anotherpattern randomtext specialword
+specialword word randomtext word word
+text specialword anotherpattern
+specialword
+specialword specialword data text pattern2 pattern2 word
+anotherpattern
+anotherpattern pattern2 randomtext pattern1 pattern1 randomtext pattern1 anotherpattern pattern2
+text text text data word pattern2 text pattern1 pattern1
+text data anotherpattern pattern1 pattern2 randomtext randomtext text pattern2 data
+randomtext pattern2 data
+specialword word pattern1 randomtext
+pattern2
+pattern2 anotherpattern randomtext pattern2 text
+anotherpattern anotherpattern anotherpattern pattern1 pattern2 pattern2 data
+specialword word pattern2 pattern1 word
+text randomtext word specialword text word specialword
+pattern2
+specialword randomtext word randomtext pattern1 data anotherpattern
+pattern2 anotherpattern text data randomtext word text randomtext anotherpattern pattern1
+pattern1 data anotherpattern data specialword text text pattern1
+specialword randomtext text data pattern1
+anotherpattern data randomtext anotherpattern specialword anotherpattern
+anotherpattern data randomtext anotherpattern pattern1
+randomtext pattern1 anotherpattern specialword specialword randomtext text specialword
+randomtext
+text randomtext anotherpattern text
+specialword pattern1 specialword data specialword word pattern1 anotherpattern anotherpattern pattern1
+pattern2 text randomtext pattern1 text anotherpattern

@@ -32,6 +32,11 @@ void recursive_wrapper(const char *file_path) {
 int main(int argc, char *argv[]) {
     parse_arguments(argc, argv, &options);
 
+    if (options.show_help) {
+        display_help();
+        return 0;
+    }
+
     if (options.file_count == 0) {
         process_stdin(grep_callback);
 

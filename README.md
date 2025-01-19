@@ -15,6 +15,7 @@ This project implements a limited version of the `grep` command in C as part of 
 
 ## Supported Options
 This limited implementation of the `grep` command supports the following options:
+- `-h` or `-help`: Displays a help-message with possible options 
 - `-i`: Perform a case-insensitive search.
 - `-v`: Invert match; only display lines that do not match the pattern.
 - `-r`: Recursively search directories for files matching the pattern.

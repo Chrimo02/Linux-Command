@@ -1,0 +1,8 @@
+anotherpattern specialword pattern1 word pattern2 text word word word
+anotherpattern data word anotherpattern text text data data text specialword
+specialword data text pattern2 randomtext
+pattern1 anotherpattern data pattern1 anotherpattern text data randomtext pattern1
+randomtext
+specialword data randomtext randomtext specialword pattern2
+anotherpattern randomtext specialword data randomtext word pattern1 pattern2 randomtext anotherpattern
+word randomtext data text specialword pattern1 word data randomtext

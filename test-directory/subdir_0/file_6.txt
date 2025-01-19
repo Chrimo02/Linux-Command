@@ -1,0 +1,42 @@
+word text specialword randomtext pattern2
+pattern1
+anotherpattern randomtext pattern1 randomtext randomtext word specialword specialword anotherpattern text
+text specialword randomtext randomtext pattern1 randomtext randomtext pattern2 text
+pattern2 pattern2 specialword randomtext pattern2 data
+text specialword text randomtext pattern2 anotherpattern word
+randomtext text data text data pattern2 text pattern2 pattern2 randomtext
+data anotherpattern pattern1 specialword anotherpattern
+text anotherpattern word pattern2 specialword specialword pattern1 randomtext pattern2
+word anotherpattern specialword word pattern1 specialword pattern1 word text
+anotherpattern
+data anotherpattern text pattern2 specialword
+anotherpattern
+specialword
+pattern2 randomtext randomtext data anotherpattern data word specialword
+anotherpattern data randomtext anotherpattern specialword specialword pattern2 randomtext
+data anotherpattern anotherpattern anotherpattern word pattern2 pattern2 word randomtext
+randomtext data data anotherpattern
+text randomtext anotherpattern pattern1 pattern1 word specialword anotherpattern pattern1
+pattern1 pattern2 data data randomtext text specialword
+pattern2 word anotherpattern anotherpattern specialword word
+data data specialword
+pattern2 word pattern1 randomtext anotherpattern pattern1
+specialword
+pattern1
+pattern2 text pattern2 randomtext word pattern1 pattern2 pattern1 data randomtext
+pattern1 word pattern2 pattern1 data anotherpattern pattern1 pattern1 specialword
+pattern1
+word pattern1 pattern2 data text word pattern2 pattern2
+randomtext
+randomtext
+randomtext text randomtext data text text
+pattern1 pattern2 data pattern2 pattern2
+word text specialword pattern1
+specialword randomtext text data pattern1 randomtext pattern2 pattern2 anotherpattern
+pattern1 pattern2 pattern2
+randomtext
+pattern2 data pattern2 word anotherpattern anotherpattern word specialword
+pattern1
+pattern1
+data randomtext randomtext specialword specialword specialword
+text pattern1 specialword pattern1 anotherpattern text word word

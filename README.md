@@ -42,8 +42,8 @@ Each `.c` file is paired with a corresponding `.h` file that declares its functi
 
 ## Build and Run
 ### Prerequisites
-- **Compiler**: GCC (GNU Compiler Collection).
-- **Operating System**: Linux (or a POSIX-compatible system).
+- **Compiler**: GCC
+- **Operating System**: Linux
 
 ### Build Process
 1. Open a terminal in the project root directory.
@@ -51,12 +51,12 @@ Each `.c` file is paired with a corresponding `.h` file that declares its functi
    ```bash
    make all
    ```
-   This will generate an executable named `grep_project`.
+   This will generate an executable named `grep`.
 
 ### Running the Program
 Run the executable with the following syntax:
 ```bash
-./grep_project [OPTIONS] PATTERN [FILE...]
+./grep [OPTIONS] PATTERN [FILE...]
 ```
 - **PATTERN**: The string or regular expression to search for.
 - **FILE**: One or more files to search. If omitted, the program reads from `stdin`.
@@ -64,15 +64,15 @@ Run the executable with the following syntax:
 ### Example Usage
 - Search for "example" in a single file:
   ```bash
-  ./grep_project example file.txt
+  ./grep example file.txt
   ```
 - Search in multiple files:
   ```bash
-  ./grep_project example file1.txt file2.txt
+  ./grep example file1.txt file2.txt
   ```
 - Pipe input to the program:
   ```bash
-  echo "This is a test" | ./grep_project test
+  echo "This is a test" | ./grep test
   ```
 
 ### Clean Up

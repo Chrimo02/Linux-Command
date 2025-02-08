@@ -1,25 +1,4 @@
-specialword
-specialword pattern1 word pattern2 randomtext randomtext randomtext
-anotherpattern text text specialword
-specialword data data anotherpattern data word specialword data pattern2 randomtext
-pattern2 text word pattern2 anotherpattern pattern1 specialword data anotherpattern
-randomtext
-randomtext data pattern1 anotherpattern
-pattern2 specialword pattern2 anotherpattern pattern2 randomtext word specialword data
-anotherpattern specialword word anotherpattern word pattern1 specialword data specialword text
-randomtext
-randomtext text text pattern1 data pattern1 data
-randomtext
-data text pattern1 word data specialword pattern2 anotherpattern
-pattern1
-anotherpattern
-randomtext text specialword pattern2 specialword pattern1 specialword anotherpattern
-anotherpattern
-data pattern1 text text word text data data
-anotherpattern specialword anotherpattern pattern2 data data
-text word anotherpattern pattern2 data text
-anotherpattern
-anotherpattern
-word data pattern2 randomtext specialword randomtext specialword word randomtext
-specialword text data pattern1 anotherpattern randomtext
-word data randomtext randomtext
+1: DATA SpecialWORD PaTteRn2 SpecialWORD Pattern1 DATA AnoTherPatTerN Pattern1
+2: randomTEXT
+3: MixedCASE DATA Pattern1 word SpecialWORD word
+4: AnoTherPatTerN

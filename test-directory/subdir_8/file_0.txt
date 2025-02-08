@@ -1,15 +1,15 @@
-randomtext
-randomtext specialword data data
-pattern2 anotherpattern pattern1 word word text
-text text word pattern1 anotherpattern text text
-text word data data data word word data specialword pattern1
-pattern1 data data pattern2
-anotherpattern
-randomtext
-text pattern1 data pattern2 randomtext randomtext data
-word pattern1 specialword pattern1 word
-pattern2 pattern2 anotherpattern randomtext anotherpattern anotherpattern pattern2
-pattern1 pattern2 anotherpattern word randomtext text text anotherpattern word pattern2
-data anotherpattern specialword
-pattern1
-pattern2 data pattern1 anotherpattern
+1: Pattern1
+2: Pattern1
+3: MixedCASE PaTteRn2 MixedCASE DATA AnoTherPatTerN MixedCASE PaTteRn2 SpecialWORD TeXT
+4: TeXT PaTteRn2 randomTEXT SpecialWORD randomTEXT PaTteRn2 DATA DATA DATA AnoTherPatTerN
+5: Pattern1
+6: AnoTherPatTerN
+7: Pattern1
+8: TeXT PaTteRn2 MixedCASE PaTteRn2
+9: SpecialWORD
+10: SpecialWORD
+11: TeXT randomTEXT Pattern1 randomTEXT DATA AnoTherPatTerN
+12: SpecialWORD
+13: SpecialWORD
+14: DATA Pattern1 randomTEXT SpecialWORD
+15: Pattern1

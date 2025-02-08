@@ -1,26 +1,26 @@
-pattern2 word word word pattern2 specialword
-word data pattern2
-text pattern2 pattern2 randomtext randomtext pattern1
-randomtext pattern1 text anotherpattern word word randomtext
-randomtext
-text specialword data anotherpattern data specialword
-pattern1
-text word specialword pattern1 specialword data data
-randomtext pattern1 randomtext data pattern1 pattern2 randomtext
-randomtext
-pattern2 randomtext pattern2 word text text word anotherpattern text randomtext
-pattern1
-specialword pattern2 specialword pattern1 word text
-data randomtext word anotherpattern
-pattern2 specialword word
-pattern2 word pattern1
-specialword
-pattern2
-anotherpattern
-randomtext text specialword text text anotherpattern anotherpattern word anotherpattern
-randomtext anotherpattern word pattern2 word pattern1 pattern2 pattern1
-text specialword word pattern1 anotherpattern
-text data specialword pattern1 word specialword pattern1 data randomtext
-pattern2 specialword pattern2 specialword anotherpattern data word text
-anotherpattern
-randomtext
+1: Pattern1
+2: AnoTherPatTerN
+3: Pattern1
+4: randomTEXT
+5: randomTEXT word randomTEXT DATA
+6: SpecialWORD randomTEXT DATA Pattern1 PaTteRn2 word MixedCASE
+7: randomTEXT TeXT PaTteRn2
+8: PaTteRn2 word MixedCASE randomTEXT
+9: Pattern1 word PaTteRn2
+10: SpecialWORD
+11: TeXT TeXT MixedCASE MixedCASE SpecialWORD AnoTherPatTerN
+12: PaTteRn2
+13: TeXT Pattern1 DATA MixedCASE Pattern1 AnoTherPatTerN PaTteRn2 TeXT
+14: TeXT MixedCASE TeXT DATA DATA randomTEXT AnoTherPatTerN
+15: Pattern1 TeXT PaTteRn2
+16: MixedCASE MixedCASE TeXT TeXT DATA DATA MixedCASE
+17: Pattern1 DATA SpecialWORD DATA DATA SpecialWORD DATA word PaTteRn2
+18: MixedCASE TeXT randomTEXT MixedCASE TeXT word word TeXT PaTteRn2
+19: TeXT randomTEXT TeXT MixedCASE Pattern1 AnoTherPatTerN randomTEXT word DATA
+20: TeXT SpecialWORD Pattern1
+21: randomTEXT PaTteRn2 PaTteRn2 MixedCASE
+22: SpecialWORD
+23: randomTEXT
+24: DATA PaTteRn2 SpecialWORD Pattern1 TeXT DATA
+25: DATA SpecialWORD MixedCASE DATA SpecialWORD PaTteRn2 word randomTEXT Pattern1
+26: PaTteRn2

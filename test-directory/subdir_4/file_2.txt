@@ -1,12 +1,30 @@
-data data text randomtext
-anotherpattern
-pattern2 specialword randomtext specialword text data specialword text data specialword
-randomtext anotherpattern pattern1 pattern1 word pattern1 pattern1 pattern1
-anotherpattern anotherpattern specialword
-pattern2 text anotherpattern pattern1 text pattern2
-pattern2 text text
-pattern1 randomtext randomtext
-text pattern1 anotherpattern randomtext pattern2 word pattern2 pattern1
-pattern2 specialword pattern2 anotherpattern data text
-randomtext word pattern2 word randomtext text pattern1 specialword randomtext data
-specialword text pattern2 text pattern1 specialword word word anotherpattern specialword
+1: SpecialWORD randomTEXT Pattern1 randomTEXT AnoTherPatTerN word PaTteRn2 TeXT word DATA
+2: PaTteRn2
+3: PaTteRn2 PaTteRn2 AnoTherPatTerN
+4: PaTteRn2 TeXT SpecialWORD
+5: SpecialWORD
+6: randomTEXT SpecialWORD DATA TeXT
+7: DATA randomTEXT TeXT
+8: AnoTherPatTerN AnoTherPatTerN word SpecialWORD SpecialWORD DATA SpecialWORD Pattern1
+9: word DATA PaTteRn2 TeXT word SpecialWORD
+10: PaTteRn2 AnoTherPatTerN MixedCASE word Pattern1 TeXT MixedCASE SpecialWORD
+11: Pattern1 TeXT TeXT word word randomTEXT Pattern1 PaTteRn2 MixedCASE
+12: PaTteRn2
+13: DATA PaTteRn2 SpecialWORD PaTteRn2 TeXT Pattern1 PaTteRn2 PaTteRn2 Pattern1
+14: randomTEXT PaTteRn2 word AnoTherPatTerN Pattern1
+15: randomTEXT
+16: DATA SpecialWORD MixedCASE SpecialWORD
+17: SpecialWORD
+18: Pattern1
+19: Pattern1 AnoTherPatTerN word MixedCASE MixedCASE randomTEXT
+20: SpecialWORD DATA SpecialWORD SpecialWORD randomTEXT
+21: randomTEXT word word DATA Pattern1 PaTteRn2 word PaTteRn2 PaTteRn2
+22: AnoTherPatTerN
+23: SpecialWORD SpecialWORD Pattern1 TeXT SpecialWORD PaTteRn2 word TeXT TeXT
+24: AnoTherPatTerN MixedCASE word PaTteRn2 randomTEXT randomTEXT MixedCASE MixedCASE PaTteRn2
+25: SpecialWORD
+26: AnoTherPatTerN
+27: SpecialWORD Pattern1 word TeXT Pattern1
+28: Pattern1
+29: randomTEXT Pattern1 TeXT word SpecialWORD
+30: randomTEXT Pattern1 word AnoTherPatTerN MixedCASE SpecialWORD PaTteRn2 SpecialWORD word

@@ -1,41 +1,4 @@
-specialword anotherpattern randomtext text
-pattern1 anotherpattern anotherpattern randomtext randomtext pattern2 data word
-pattern2 specialword randomtext
-randomtext anotherpattern pattern1 specialword data pattern1 anotherpattern
-randomtext data specialword data
-pattern1
-pattern2
-text specialword anotherpattern data word anotherpattern data pattern2 pattern1
-randomtext
-pattern2
-randomtext text pattern1 text
-word anotherpattern specialword
-pattern1 text text
-data text pattern1 text anotherpattern specialword text randomtext
-word data specialword anotherpattern pattern2 randomtext pattern2
-text text randomtext specialword specialword data randomtext anotherpattern
-anotherpattern
-data word data randomtext anotherpattern randomtext word
-specialword specialword pattern1 specialword anotherpattern text data
-pattern1 randomtext randomtext randomtext specialword pattern1 specialword
-pattern1
-pattern2
-randomtext word anotherpattern
-pattern1
-data pattern2 pattern1 randomtext randomtext anotherpattern
-randomtext data randomtext randomtext pattern1 data word text
-word specialword specialword data pattern2 pattern1 anotherpattern anotherpattern anotherpattern
-word word pattern2 pattern1 specialword anotherpattern anotherpattern randomtext specialword
-specialword specialword pattern2 text text randomtext randomtext
-randomtext pattern2 word pattern1
-text pattern2 word
-data randomtext specialword
-pattern2 data data anotherpattern
-anotherpattern pattern1 randomtext anotherpattern pattern1 pattern1 data specialword
-anotherpattern
-specialword
-anotherpattern pattern1 data text pattern1 anotherpattern word data pattern1
-anotherpattern pattern1 pattern2 pattern1 anotherpattern specialword pattern2 randomtext pattern2 pattern2
-word word anotherpattern specialword randomtext word text anotherpattern randomtext pattern2
-text randomtext data pattern1 randomtext data data
-pattern2 pattern1 word randomtext anotherpattern specialword
+1: DATA AnoTherPatTerN Pattern1 PaTteRn2 TeXT MixedCASE DATA SpecialWORD
+2: PaTteRn2 PaTteRn2 DATA MixedCASE
+3: SpecialWORD SpecialWORD AnoTherPatTerN SpecialWORD DATA Pattern1
+4: SpecialWORD word word SpecialWORD randomTEXT TeXT

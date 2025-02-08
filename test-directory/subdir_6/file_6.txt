@@ -1,9 +1,0 @@
-specialword anotherpattern word specialword text word
-specialword pattern1 anotherpattern randomtext
-anotherpattern data randomtext
-randomtext
-specialword
-pattern1 text randomtext text word anotherpattern
-text text text anotherpattern pattern2 data word
-data pattern2 text data randomtext specialword anotherpattern pattern1
-pattern1 anotherpattern pattern2 specialword word

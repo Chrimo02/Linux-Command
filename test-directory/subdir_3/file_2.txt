@@ -1,37 +1,10 @@
-randomtext anotherpattern pattern1 pattern1 word data word randomtext pattern1
-pattern1 anotherpattern anotherpattern pattern2 randomtext anotherpattern pattern1 word
-word pattern2 randomtext anotherpattern data word pattern1
-specialword
-anotherpattern text pattern2 pattern2
-anotherpattern pattern2 word
-specialword text anotherpattern word
-randomtext
-pattern1 pattern2 word
-data pattern2 randomtext
-pattern2 randomtext anotherpattern specialword randomtext specialword specialword pattern1 word
-pattern1
-specialword anotherpattern anotherpattern specialword randomtext data pattern1 randomtext
-text pattern1 anotherpattern randomtext specialword anotherpattern
-text anotherpattern data anotherpattern pattern2 pattern1 pattern2
-anotherpattern
-pattern2 pattern1 pattern1 word
-specialword text pattern1 text randomtext text
-randomtext word specialword specialword word
-randomtext
-data specialword specialword anotherpattern pattern1 pattern2 pattern1 pattern2 word
-word specialword data word pattern2
-word text anotherpattern text randomtext specialword pattern2 anotherpattern pattern2
-pattern2 anotherpattern data word text word
-specialword
-randomtext randomtext data pattern1 anotherpattern
-anotherpattern
-text pattern2 pattern1 randomtext pattern1 pattern2 pattern1 anotherpattern
-data specialword pattern1
-anotherpattern anotherpattern pattern1 pattern2 pattern2
-randomtext
-anotherpattern text randomtext
-data anotherpattern text
-pattern1
-anotherpattern
-pattern2
-anotherpattern
+1: PaTteRn2
+2: randomTEXT TeXT word PaTteRn2
+3: word Pattern1 SpecialWORD AnoTherPatTerN randomTEXT
+4: randomTEXT MixedCASE PaTteRn2 Pattern1 MixedCASE MixedCASE
+5: Pattern1 PaTteRn2 randomTEXT TeXT Pattern1
+6: AnoTherPatTerN PaTteRn2 TeXT PaTteRn2 AnoTherPatTerN randomTEXT
+7: randomTEXT SpecialWORD PaTteRn2 TeXT DATA randomTEXT DATA PaTteRn2 randomTEXT
+8: TeXT randomTEXT PaTteRn2 AnoTherPatTerN MixedCASE PaTteRn2 randomTEXT Pattern1 PaTteRn2
+9: TeXT AnoTherPatTerN word TeXT TeXT Pattern1 randomTEXT randomTEXT
+10: AnoTherPatTerN word DATA word SpecialWORD randomTEXT PaTteRn2 TeXT Pattern1

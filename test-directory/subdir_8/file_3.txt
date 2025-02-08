@@ -1,23 +1,32 @@
-word pattern2 text randomtext pattern2
-pattern2 pattern2 data pattern2 specialword pattern2 specialword word specialword anotherpattern
-pattern1
-randomtext data specialword specialword pattern1 anotherpattern specialword
-pattern2 specialword text data anotherpattern data
-pattern1
-pattern2
-anotherpattern randomtext specialword
-data text pattern2
-specialword word pattern1 pattern2 text pattern2 word specialword anotherpattern
-pattern1 data word randomtext word anotherpattern pattern2
-randomtext
-data specialword word anotherpattern
-text anotherpattern specialword anotherpattern randomtext pattern1 word data
-specialword anotherpattern pattern1 specialword pattern2 anotherpattern pattern1 data anotherpattern text
-data word randomtext
-randomtext
-randomtext specialword word randomtext pattern1 pattern2
-pattern1 word pattern1 randomtext
-pattern2
-pattern1 data pattern1 pattern1 specialword pattern1
-specialword
-word specialword pattern2 data data specialword specialword anotherpattern
+1: Pattern1 word randomTEXT AnoTherPatTerN MixedCASE PaTteRn2 randomTEXT MixedCASE SpecialWORD
+2: Pattern1 word TeXT TeXT AnoTherPatTerN DATA randomTEXT AnoTherPatTerN TeXT DATA
+3: MixedCASE PaTteRn2 AnoTherPatTerN Pattern1 SpecialWORD AnoTherPatTerN MixedCASE TeXT DATA
+4: DATA SpecialWORD MixedCASE Pattern1 word TeXT TeXT
+5: SpecialWORD
+6: TeXT TeXT Pattern1 TeXT PaTteRn2
+7: PaTteRn2 DATA Pattern1 DATA AnoTherPatTerN word randomTEXT Pattern1
+8: MixedCASE word PaTteRn2 PaTteRn2 DATA TeXT
+9: TeXT SpecialWORD PaTteRn2
+10: TeXT MixedCASE word AnoTherPatTerN
+11: PaTteRn2
+12: PaTteRn2 MixedCASE word
+13: SpecialWORD randomTEXT DATA randomTEXT
+14: PaTteRn2 TeXT DATA word randomTEXT MixedCASE TeXT randomTEXT
+15: Pattern1
+16: TeXT DATA AnoTherPatTerN TeXT DATA
+17: word Pattern1 DATA randomTEXT Pattern1 DATA SpecialWORD Pattern1
+18: PaTteRn2 randomTEXT DATA AnoTherPatTerN SpecialWORD DATA DATA randomTEXT DATA word
+19: TeXT AnoTherPatTerN randomTEXT DATA MixedCASE DATA MixedCASE AnoTherPatTerN SpecialWORD
+20: Pattern1 PaTteRn2 AnoTherPatTerN
+21: PaTteRn2 PaTteRn2 SpecialWORD
+22: word DATA word Pattern1 word randomTEXT
+23: MixedCASE Pattern1 randomTEXT AnoTherPatTerN AnoTherPatTerN Pattern1 AnoTherPatTerN PaTteRn2
+24: word MixedCASE SpecialWORD
+25: AnoTherPatTerN
+26: MixedCASE randomTEXT AnoTherPatTerN SpecialWORD PaTteRn2 word
+27: AnoTherPatTerN randomTEXT SpecialWORD AnoTherPatTerN
+28: Pattern1 DATA SpecialWORD SpecialWORD
+29: PaTteRn2 MixedCASE randomTEXT AnoTherPatTerN TeXT DATA AnoTherPatTerN SpecialWORD TeXT Pattern1
+30: DATA Pattern1 TeXT
+31: DATA DATA DATA MixedCASE
+32: TeXT AnoTherPatTerN randomTEXT word MixedCASE AnoTherPatTerN word

@@ -1,0 +1,4 @@
+1: PaTteRn2 word MixedCASE TeXT PaTteRn2 SpecialWORD TeXT
+2: DATA PaTteRn2 Pattern1 Pattern1 Pattern1 DATA MixedCASE randomTEXT
+3: Pattern1 DATA DATA TeXT AnoTherPatTerN TeXT MixedCASE PaTteRn2
+4: PaTteRn2 PaTteRn2 MixedCASE randomTEXT Pattern1 Pattern1 MixedCASE Pattern1

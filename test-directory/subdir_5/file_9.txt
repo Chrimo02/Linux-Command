@@ -1,0 +1,15 @@
+1: randomTEXT
+2: AnoTherPatTerN Pattern1 PaTteRn2
+3: Pattern1
+4: randomTEXT
+5: randomTEXT
+6: PaTteRn2
+7: word SpecialWORD word
+8: word PaTteRn2 SpecialWORD word randomTEXT AnoTherPatTerN
+9: AnoTherPatTerN
+10: DATA Pattern1 word
+11: TeXT DATA PaTteRn2 randomTEXT PaTteRn2 DATA MixedCASE
+12: Pattern1 AnoTherPatTerN Pattern1 word SpecialWORD MixedCASE
+13: randomTEXT
+14: word Pattern1 SpecialWORD PaTteRn2
+15: SpecialWORD

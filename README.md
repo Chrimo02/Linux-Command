@@ -58,7 +58,7 @@ Run the executable with the following syntax:
 ```bash
 ./grep [OPTIONS] PATTERN [FILE...]
 ```
-- **PATTERN**: The string or regular expression to search for.
+- **PATTERN**: The string to search for.
 - **FILE**: One or more files to search. If omitted, the program reads from `stdin`.
 
 ### Example Usage

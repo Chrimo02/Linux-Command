@@ -32,7 +32,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c $(INC_DIR)/%.h
 test: all
 	@echo "Running test cases..."
 	@mkdir -p $(TEST_DIR)/outputs
-	@bash $(TEST_DIR)/run_tests.sh
+	@bash run_tests.sh
 
 # Clean build artifacts
 clean:

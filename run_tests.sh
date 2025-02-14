@@ -1,17 +1,13 @@
 #!/usr/bin/env bash
 
-# Kompiliere das Projekt
 make clean
 make all
 
-# Verzeichnis wechseln und prüfen, ob Build erfolgreich
 cd build || { echo "Build-Verzeichnis nicht gefunden"; exit 1; }
 pwd
 
-# Basisverzeichnis für Tests
 TEST_DIR="../test-directory"
 
-# Überprüfen, ob Testverzeichnis existiert
 if [ ! -d "$TEST_DIR" ]; then
     echo "Testverzeichnis '$TEST_DIR' nicht gefunden."
     exit 1
@@ -19,7 +15,6 @@ fi
 
 echo "Starte Tests auf Verzeichnis: $TEST_DIR"
 
-# Funktion zum Ausführen und Überprüfen eines Tests
 function run_test {
     echo -e "\n# Test: $1"
     eval "$2" > output.txt 2> error.txt
@@ -34,7 +29,6 @@ function run_test {
     cat output.txt
 }
 
-# Grep-Tests ausführen
 run_test "Normales grep (einzelne Datei)" \
     "./grep 'specialword' $TEST_DIR/subdir_0/file_1.txt"
 
@@ -71,11 +65,9 @@ run_test "Rekursives grep (Count + case-insensitive)" \
 run_test "Rekursives grep (Count + inverted match)" \
     "./grep -r -v -c 'specialword' $TEST_DIR"
 
-# Zusätzliche Tests auf leere Dateien
 run_test "Grep auf leere Datei" \
     "./grep 'specialword' $TEST_DIR/subdir_0/empty_file.txt"
 
-# Test auf Binärdateien
 run_test "Grep auf Binärdatei (soll keine Fehler werfen)" \
     "./grep 'specialword' $TEST_DIR/subdir_0/binary_file.bin"
 

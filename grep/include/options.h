@@ -15,10 +15,9 @@ typedef struct {
     int file_count;
 } options_t;
 
-// Externe Deklaration der globalen Variable
 extern options_t options;
 
 void parse_arguments(int argc, char *argv[], options_t *options);
 void display_help();
 
-#endif // OPTIONS_H
+#endif

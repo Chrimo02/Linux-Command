@@ -6,4 +6,4 @@
 #include "options.h"
 #include "utils.h"
 
-#endif // MAIN_H
+#endif

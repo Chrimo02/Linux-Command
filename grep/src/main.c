@@ -1,13 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include "file_ops.h"
 #include "pattern.h"
 #include "options.h"
-#include "utils.h"
 #include "data_structures.h"
 #include "threading.h"
-#include "directory_ops.h"
 
 options_t options;
 Match *matches = NULL;
@@ -60,6 +57,6 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    destroy_mutex(); // Destroy the matches mutex
+    destroy_mutex();
     return 0;
 }

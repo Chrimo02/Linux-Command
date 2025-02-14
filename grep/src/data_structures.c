@@ -54,12 +54,12 @@ void highlight_match(const char *line, const char *pattern, int ignore_case) {
     const char *match;
 
     while ((match = (ignore_case ? pattern_case_insensitive_find(start, pattern) : strstr(start, pattern))) != NULL) {
-        fwrite(start, 1, match - start, stdout);  // Print text before the match
-        printf("\033[31m%.*s\033[0m", (int)strlen(pattern), match);  // Highlight match in red
-        start = match + strlen(pattern);  // Move pointer forward
+        fwrite(start, 1, match - start, stdout);
+        printf("\033[31m%.*s\033[0m", (int)strlen(pattern), match);
+        start = match + strlen(pattern);
     }
 
-    printf("%s", start);  // Print remaining part of the line
+    printf("%s", start);
 }
 
 void print_matches(Match *head, const options_t *opts, const char *file_name) {

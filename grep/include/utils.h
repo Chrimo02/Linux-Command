@@ -3,4 +3,4 @@
 
 void print_usage(const char *prog_name);
 
-#endif // UTILS_H
+#endif

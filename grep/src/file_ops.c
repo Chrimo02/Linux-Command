@@ -1,4 +1,3 @@
-// file_ops.c
 #include "file_ops.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +7,7 @@
 char *read_line(FILE *file) {
     char buffer[BUFFER_SIZE];
     if (fgets(buffer, BUFFER_SIZE, file) == NULL) {
-        return NULL; // EOF or error
+        return NULL;
     }
 
     size_t len = strlen(buffer);
@@ -30,10 +29,10 @@ void process_file(const char *file_path, callback_t callback) {
     }
 
     char *line = NULL;
-    int line_number = 0; // Zeilennummer-Tracker
+    int line_number = 0;
     while ((line = read_line(file)) != NULL) {
         line_number++;
-        if (!callback(line, line_number)) { // Zeilennummer übergeben
+        if (!callback(line, line_number)) {
             free(line);
             break;
         }
@@ -45,7 +44,7 @@ void process_file(const char *file_path, callback_t callback) {
 
 void process_stdin(callback_t callback) {
     char *line = NULL;
-    int line_number = 0; // Zeilennummer-Tracker
+    int line_number = 0;
     while ((line = read_line(stdin)) != NULL) {
         line_number++;
         if (!callback(line, line_number)) {

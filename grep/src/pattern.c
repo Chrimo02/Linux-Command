@@ -26,7 +26,7 @@ const char* pattern_case_insensitive_find(const char *haystack, const char *need
         if (match) return haystack + i; // Zeiger auf den ersten Treffer
     }
 
-    return NULL; // Kein Treffer gefunden
+    return NULL;
 }
 
 

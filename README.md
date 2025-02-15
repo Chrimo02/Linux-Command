@@ -3,6 +3,8 @@
 ## Overview
 This project implements a limited version of the `grep` command in C as part of a portfolio assignment for the System-Oriented Programming course. The program allows users to search for patterns within files and directories, supporting concurrency, dynamic data structures, and integration with Linux pipelines.
 
+Please watch grep.mp4 to get a quick introduction into this project.
+
 ## Features
 - Search for a pattern in one or multiple files.
 - Support for command-line arguments to configure behavior.
